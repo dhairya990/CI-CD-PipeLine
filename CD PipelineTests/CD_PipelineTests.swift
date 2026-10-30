@@ -6,8 +6,7 @@
 //
 
 import Testing
-@testable import CI_CD_Pipeline
-
+@testable import CD_Pipeline
 struct CD_PipelineTests {
 
     @Test func example() async throws {
