@@ -56,6 +56,11 @@
 			path = "CD PipelineUITests";
 			sourceTree = "<group>";
 		};
+		2F28406230952BC600F5609B /* github */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = github;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 		2F284002309522C500F5609B = {
 			isa = PBXGroup;
 			children = (
+				2F28406230952BC600F5609B /* github */,
 				2F28405B309529C100F5609B /* fastlane */,
 				2F28405C309529C100F5609B /* Gemfile */,
 				2F28405D309529C100F5609B /* Gemfile.lock */,
@@ -132,6 +138,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				2F28400D309522C600F5609B /* CD Pipeline */,
+				2F28406230952BC600F5609B /* github */,
 			);
 			name = "CD Pipeline";
 			packageProductDependencies = (
