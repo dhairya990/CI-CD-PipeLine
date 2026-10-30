@@ -26,7 +26,10 @@ jobs:
 
       - name: Show Xcode version
         run: xcodebuild -version
-
+      
+      - name: List available simulators
+        run: xcrun simctl list devices available
+  
       - name: Show Ruby version
         run: ruby --version
 
