@@ -1,0 +1,63 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Run tests"
+  lane :test do
+    puts "🧪 Running tests..."
+
+    run_tests(
+      scheme: "CD Pipeline"
+    )
+
+    puts "✅ Tests passed!"
+  end
+
+  desc "Build and archive without code signing"
+  lane :build do
+    puts "🚀 Starting iOS archive..."
+
+    build_app(
+      scheme: "CD Pipeline",
+      configuration: "Debug",
+      skip_codesigning: true,
+      skip_package_ipa: true
+    )
+
+    puts "✅ Archive completed successfully!"
+  end
+
+  desc "Run tests and archive"
+  lane :ci do
+    puts "🚀 Starting CI pipeline..."
+
+    run_tests(
+      scheme: "CD Pipeline"
+    )
+
+    build_app(
+      scheme: "CD Pipeline",
+      configuration: "Debug",
+      skip_codesigning: true,
+      skip_package_ipa: true
+    )
+
+    puts "🎉 CI pipeline completed successfully!"
+  end
+
+end

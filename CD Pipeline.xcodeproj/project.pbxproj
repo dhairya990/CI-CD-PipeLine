@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2F28405E309529C100F5609B /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = 2F284059309529C100F5609B /* Appfile */; };
+		2F28405F309529C100F5609B /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 2F28405C309529C100F5609B /* Gemfile */; };
+		2F284060309529C100F5609B /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 2F28405A309529C100F5609B /* Fastfile */; };
+		2F284061309529C100F5609B /* Gemfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 2F28405D309529C100F5609B /* Gemfile.lock */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2F284019309522C900F5609B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +34,10 @@
 		2F28400B309522C600F5609B /* CD Pipeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CD Pipeline.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F284018309522C900F5609B /* CD PipelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CD PipelineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F284022309522C900F5609B /* CD PipelineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CD PipelineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F284059309529C100F5609B /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		2F28405A309529C100F5609B /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		2F28405C309529C100F5609B /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		2F28405D309529C100F5609B /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +86,9 @@
 		2F284002309522C500F5609B = {
 			isa = PBXGroup;
 			children = (
+				2F28405B309529C100F5609B /* fastlane */,
+				2F28405C309529C100F5609B /* Gemfile */,
+				2F28405D309529C100F5609B /* Gemfile.lock */,
 				2F28400D309522C600F5609B /* CD Pipeline */,
 				2F28401B309522C900F5609B /* CD PipelineTests */,
 				2F284025309522C900F5609B /* CD PipelineUITests */,
@@ -90,6 +104,15 @@
 				2F284022309522C900F5609B /* CD PipelineUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2F28405B309529C100F5609B /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				2F284059309529C100F5609B /* Appfile */,
+				2F28405A309529C100F5609B /* Fastfile */,
+			);
+			path = fastlane;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F28405E309529C100F5609B /* Appfile in Resources */,
+				2F28405F309529C100F5609B /* Gemfile in Resources */,
+				2F284060309529C100F5609B /* Fastfile in Resources */,
+				2F284061309529C100F5609B /* Gemfile.lock in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,15 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(spacing: 20) {
+
+                Image(systemName: "rocket.fill")
+                    .font(.system(size: 60))
+                    .foregroundStyle(.blue)
+
+                Text("Fastlane Demo")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+
+                Text("iOS CI/CD Automation")
+                    .font(.headline)
+                    .foregroundStyle(.secondary)
+
+                Text("Build → Archive → Upload")
+                    .font(.body)
+                    .foregroundStyle(.secondary)
+
+            }
+            .padding()
+            .navigationTitle("CI/CD Demo")
         }
-        .padding()
     }
 }
 
-
+#Preview {
+    ContentView()
+}
